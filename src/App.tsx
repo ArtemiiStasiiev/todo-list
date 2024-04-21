@@ -2,8 +2,6 @@ import React, { FC, useState, useEffect } from 'react'
 import Form from './components/Form.tsx';
 import TodoList from './components/TodoList.tsx';
 import './App.css';
-//import { ITodoArr } from './Interfaces.tsx';
-
 
 const App: FC = () => {
   const [inputText, setInputText] = useState<string>('');
@@ -19,7 +17,6 @@ const App: FC = () => {
   useEffect(() => {
     getTodos()
   }, [])
-
 
   const filterHandler = () => {
     if (status == 'completed') {

@@ -12,6 +12,7 @@ input:focus,
 select:focus {
     outline: none;
 }
+
 /*Form*/
 form {
     display: flex;
