@@ -16,7 +16,6 @@ const Form: FC<IFormProps> = ({ inputText, setInputText, todos, setTodos, setSta
             setTodos([
                 ...todos,
                 {
-                    //id: `${Math.random() * 1000}`,
                     id: uuidv4(),
                     title: inputTitle,
                     description: inputText,
